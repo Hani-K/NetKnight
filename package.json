@@ -1,0 +1,30 @@
+{
+  "name": "netknight",
+  "version": "1.0.0",
+  "description": "A matrix bot to handle wifi network commands using api.",
+  "main": "netknight.js",
+  "scripts": {
+    "start": "node netknight.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hani-K/NetKnight.git"
+  },
+  "keywords": [
+    "NetKnight",
+    "Matrix",
+    "Bot"
+  ],
+  "author": "Hani K.",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hani-K/NetKnight/issues"
+  },
+  "homepage": "https://github.com/Hani-K/NetKnight#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "dotenv": "^16.4.5",
+    "matrix-bot-sdk": "^0.7.1",
+    "winston": "^3.13.0"
+  }
+}
