@@ -16,3 +16,20 @@ client.on("room.message", async (roomId, event) => {
 client.start()
     .then(() => logger.info("NetKnight started!"))
     .catch(error => logger.error(`NetKnight failed to start: ${error.message}`));
+
+// Graceful shutdown
+function gracefulShutdown(signal) {
+    logger.info(`Received ${signal}. Shutting down gracefully...`);
+    try {
+        // Perform any necessary cleanup here
+        client.stop(); // Attempt to stop the client if it has a stop method
+        logger.info('NetKnight bot stopped.');
+    } catch (error) {
+        logger.error(`Error during shutdown: ${error.message}`);
+    } finally {
+        process.exit(0);
+    }
+}
+
+process.on('SIGINT', () => gracefulShutdown('SIGINT'));
+process.on('SIGTERM', () => gracefulShutdown('SIGTERM'));
