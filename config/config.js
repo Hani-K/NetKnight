@@ -7,6 +7,7 @@ const config = {
     apiWebhookUrl: process.env.API_WEBHOOK_URL,
     allowedUsers: process.env.ALLOWED_USERS.split(','), // Split into array
     monitoredRooms: process.env.MONITORED_ROOMS.split(','), // Split into array
+    allowedBots: process.env.ALLOWED_BOTS.split(','), // Split into array
 };
 
 const logger = winston.createLogger({

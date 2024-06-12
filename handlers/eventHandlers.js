@@ -1,6 +1,7 @@
 const { handleMacAddressCommand, handleSimpleCommand, handleHelpCommand } = require('./commandHandlers');
 const { handleMenuCommand, handleMainMenu, isMainMenuMode, isMenuRoom, exitMenuMode } = require('./menuHandlers');
-const { logger } = require('../config/config');
+const { botEventHandler, handleMacMenuSelection, isMacMenuMode, isMacMenuRoom } = require('./botEventHandler');
+const { logger, config } = require('../config/config');
 const { isMonitoredRoom, isAllowedUser } = require('./utils');
 
 async function handleEvent(client, roomId, event) {
@@ -9,6 +10,15 @@ async function handleEvent(client, roomId, event) {
     }
 
     logger.info(`Message received in room ${roomId} from ${event.sender}`);
+
+    // Log the entire event content for debugging
+    // logger.info(`Received bot event: ${JSON.stringify(event)}`);
+
+    // Check if the sender is an allowed bot
+    if (config.allowedBots.includes(event.sender)) {
+        await botEventHandler(client, roomId, event);
+        return;
+    }
 
     if (!isMonitoredRoom(roomId) || !isAllowedUser(event.sender)) {
         return;
@@ -19,6 +29,10 @@ async function handleEvent(client, roomId, event) {
     if (isMainMenuMode() && isMenuRoom(roomId)) {
         if (/^\d+$/.test(body)) {
             await handleMainMenu(client, roomId, event.sender, parseInt(body, 10));
+        }
+    } else if (isMacMenuMode() && isMacMenuRoom(roomId)) {
+        if (/^\d+$/.test(body)) {
+            await handleMacMenuSelection(client, roomId, event.sender, parseInt(body, 10));
         }
     } else {
         if (body.startsWith("#block") || body.startsWith("#allow") || body.startsWith("#allowsave")) {
