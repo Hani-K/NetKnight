@@ -7,10 +7,11 @@ const client = new MatrixClient(config.homeserverUrl, config.accessToken, storag
 
 AutojoinRoomsMixin.setupOnClient(client);
 
+const startTime = new Date();
 logger.info('NetKnight started...');
 
 client.on("room.message", async (roomId, event) => {
-    await handleEvent(client, roomId, event);
+    await handleEvent(client, roomId, event, startTime);
 });
 
 client.start()

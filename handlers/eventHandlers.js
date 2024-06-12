@@ -4,8 +4,15 @@ const { botEventHandler, handleMacMenuSelection, isMacMenuMode, isMacMenuRoom } 
 const { logger, config } = require('../config/config');
 const { isMonitoredRoom, isAllowedUser } = require('./utils');
 
-async function handleEvent(client, roomId, event) {
+async function handleEvent(client, roomId, event, startTime) {
     if (!event.content || event.content.msgtype !== "m.text") {
+        return;
+    }
+
+    const eventTimestamp = new Date(event.origin_server_ts);
+    if (eventTimestamp < startTime) {
+        // Ignore messages sent before the bot started
+        logger.info(`Ignored old message from ${event.sender} in room ${roomId}`);
         return;
     }
 
