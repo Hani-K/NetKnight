@@ -1,8 +1,8 @@
 const { handleHelpCommand, handleSimpleCommand } = require('./commandHandlers');
+const { logger, config } = require('../config/config');
 const { isAllowedUser } = require('./utils');
-const { logger } = require('../config/config');
 
-let menuMode = false; // Flag to track menu mode
+let mainMenuMode = false; // Flag to track menu mode
 let menuRoomId = null; // Room ID where the menu is active
 
 async function handleMenuCommand(client, roomId) {
@@ -18,7 +18,7 @@ async function handleMenuCommand(client, roomId) {
     `;
     try {
         await client.sendText(roomId, menuMessage);
-        menuMode = true;
+        mainMenuMode = true;
         menuRoomId = roomId;
         logger.info(`#menu sent in room ${roomId}`);
     } catch (error) {
@@ -26,7 +26,7 @@ async function handleMenuCommand(client, roomId) {
     }
 }
 
-async function handleMenuSelection(client, roomId, sender, selection) {
+async function handleMainMenu(client, roomId, sender, selection) {
     if (!isAllowedUser(sender)) {
         return;
     }
@@ -49,7 +49,7 @@ async function handleMenuSelection(client, roomId, sender, selection) {
             break;
         case 0:
             await client.sendText(roomId, "Exiting menu.");
-            menuMode = false;
+            mainMenuMode = false;
             menuRoomId = null;
             logger.info(`Menu exited by ${sender} in room ${roomId}`);
             break;
@@ -59,13 +59,13 @@ async function handleMenuSelection(client, roomId, sender, selection) {
     }
 
     if (selection >= 0 && selection <= 5) {
-        menuMode = false; // Exit menu mode after handling a valid selection
+        mainMenuMode = false; // Exit menu mode after handling a valid selection
         menuRoomId = null;
     }
 }
 
-function isMenuMode() {
-    return menuMode;
+function isMainMenuMode() {
+    return mainMenuMode;
 }
 
 function isMenuRoom(roomId) {
@@ -73,8 +73,8 @@ function isMenuRoom(roomId) {
 }
 
 function exitMenuMode() {
-    menuMode = false;
+    mainMenuMode = false;
     menuRoomId = null;
 }
 
-module.exports = { handleMenuCommand, handleMenuSelection, isMenuMode, isMenuRoom, exitMenuMode };
+module.exports = { handleMenuCommand, handleMainMenu, isMainMenuMode, isMenuRoom, exitMenuMode };

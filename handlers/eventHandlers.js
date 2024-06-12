@@ -1,6 +1,6 @@
 const { handleMacAddressCommand, handleSimpleCommand, handleHelpCommand } = require('./commandHandlers');
-const { handleMenuCommand, handleMenuSelection, isMenuMode, isMenuRoom, exitMenuMode } = require('./menuHandlers');
-const { logger, config } = require('../config/config');
+const { handleMenuCommand, handleMainMenu, isMainMenuMode, isMenuRoom, exitMenuMode } = require('./menuHandlers');
+const { logger } = require('../config/config');
 const { isMonitoredRoom, isAllowedUser } = require('./utils');
 
 async function handleEvent(client, roomId, event) {
@@ -16,9 +16,9 @@ async function handleEvent(client, roomId, event) {
 
     const body = event.content.body;
 
-    if (isMenuMode() && isMenuRoom(roomId)) {
+    if (isMainMenuMode() && isMenuRoom(roomId)) {
         if (/^\d+$/.test(body)) {
-            await handleMenuSelection(client, roomId, event.sender, parseInt(body, 10));
+            await handleMainMenu(client, roomId, event.sender, parseInt(body, 10));
         }
     } else {
         if (body.startsWith("#block") || body.startsWith("#allow") || body.startsWith("#allowsave")) {

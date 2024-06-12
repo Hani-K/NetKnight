@@ -91,3 +91,66 @@
 2024-06-11T18:40:55.585Z info: DANGER command sent to Arcturus!
 2024-06-11T18:40:55.614Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
 2024-06-11T18:40:55.614Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:20:35.111Z info: NetKnight started...
+2024-06-12T05:20:35.146Z info: NetKnight started!
+2024-06-12T05:20:55.247Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:22:58.218Z info: NetKnight started...
+2024-06-12T05:22:58.251Z info: NetKnight started!
+2024-06-12T05:23:04.312Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:23:04.313Z info: Detected #help command
+2024-06-12T05:23:04.343Z info: #help command processed in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:23:04.365Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:23:04.365Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:24:02.037Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:24:02.038Z info: Detected #help command
+2024-06-12T05:24:02.072Z info: #help command processed in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:24:02.101Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:24:02.101Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:24:25.645Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:24:25.645Z info: Detected monitor_traffic command from @hani:chat.cosycove.net in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:24:25.726Z info: Monitor_traffic command sent to Arcturus!
+2024-06-12T05:24:25.774Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:24:25.774Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:25:05.254Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:25:05.254Z info: Detected #help command
+2024-06-12T05:25:05.284Z info: #help command processed in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:25:05.305Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:25:05.306Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:25:16.483Z info: Received SIGINT. Shutting down gracefully...
+2024-06-12T05:26:04.632Z info: NetKnight started...
+2024-06-12T05:26:04.665Z info: NetKnight started!
+2024-06-12T05:26:10.243Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:26:10.243Z info: Detected #menu command
+2024-06-12T05:26:10.276Z info: #menu sent in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:26:10.296Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:26:10.296Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:26:35.063Z info: Received SIGINT. Shutting down gracefully...
+2024-06-12T05:30:38.155Z info: NetKnight started...
+2024-06-12T05:30:38.185Z info: NetKnight started!
+2024-06-12T05:30:48.750Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:30:48.751Z info: Detected #help command
+2024-06-12T05:30:48.778Z info: #help command processed in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:30:48.788Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:30:48.788Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:32:21.377Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:32:21.377Z info: Detected #help command
+2024-06-12T05:32:21.417Z info: #help command processed in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:32:21.443Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:32:21.443Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:32:28.210Z info: Received SIGINT. Shutting down gracefully...
+2024-06-12T05:45:16.346Z info: NetKnight started...
+2024-06-12T05:45:16.376Z info: NetKnight started!
+2024-06-12T05:45:25.897Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:45:25.898Z info: Detected #help command
+2024-06-12T05:45:25.933Z info: #help command processed in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:45:25.956Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:45:25.957Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:45:31.491Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:45:31.491Z info: Detected #menu command
+2024-06-12T05:45:31.529Z info: #menu sent in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:45:31.553Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:45:31.554Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
+2024-06-12T05:45:33.945Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @hani:chat.cosycove.net
+2024-06-12T05:45:33.982Z info: Menu exited by @hani:chat.cosycove.net in room !KmNjqyTZ4GgGLu90:chat.cosycove.net
+2024-06-12T05:45:34.008Z info: Message received in room !KmNjqyTZ4GgGLu90:chat.cosycove.net from @wirey_boi:chat.cosycove.net
+2024-06-12T05:45:34.008Z info: Ignored message from unauthorized user @wirey_boi:chat.cosycove.net
