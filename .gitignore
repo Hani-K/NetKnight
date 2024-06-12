@@ -1,3 +1,4 @@
 log_netknight.log
 *.env
 netknight.json
+*.old
